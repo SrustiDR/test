@@ -1,0 +1,34 @@
+Mpi client
+
+sudo apt-get install openmpi-bin
+sudo nano /etc/hosts
+  #MPI CLUSTER SETUP
+  172.12.51.49   manager
+  172.12.51.39   client1
+
+To add a new user:
+sudo adduser mpiuser
+Making mpiuser a sudoer :
+sudo usermod -aG sudo mpiuser
+Setting up SSH:
+sudo apt­-get install openssh-server
+
+Log in to the newly created user by
+su – mpiuser
+Navigate to ~/.ssh folder and
+ssh-keygen -t rsa
+cd .ssh/
+cat id_rsa.pub >> authorized_keys
+ssh-copy-id client1  // for client 1
+
+Now you can connect to worker nodes without entering passwords
+ssh master
+exit
+ssh-copy-id manager
+sudo apt-get install nfs-common
+mkdir cloud
+sudo mount -t nfs manager:/home/cam5/cloud ~/cloud
+  ls
+cd cloud
+touch text.txt
+ls
