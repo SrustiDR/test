@@ -1,0 +1,3 @@
+ sudo ~/Downloads/VMware-Player-Full-17.5.0-22583795.x86_64.bundle
+ sudo apt-get install nfs-commonsudo mount 192.168.218.128:/mnt/srusti/srusti /home/msis/freenas
+ df -h
