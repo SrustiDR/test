@@ -1,0 +1,20 @@
+git init
+git clone https://github.com/djgit17/MyMavenApp.git
+cd MyMAvenApp
+git branch branch1
+cd webapp
+nano index.jsp
+// change the name
+git add .
+git commit -m " changed the name in index.jsp"
+git status
+git checkout master
+git merge branch1
+touch Dockerfile 
+nano Dockerfile // write the content
+add
+commit
+git branch -M main
+git remote rm origin
+git remote add origin "url"
+git push -u origin main
