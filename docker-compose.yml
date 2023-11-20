@@ -1,3 +1,6 @@
+// for dockercompose php and database
+
+
 version: '3'
 services:
   www:
