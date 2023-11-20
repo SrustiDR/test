@@ -1,0 +1,13 @@
+in 1st terminal
+cd /var/run
+sudo chmod 777 docker.sock
+
+in 2nd terninal
+ git clone " url of FullstackApp1.git"
+cd FullStackApp1/
+sudo docker-compose -f docker-compose_updated.yml up
+
+in browser localhost:3000/   // signup
+in browser localhost:8001/   // username: php_docker
+                                password: password
+see in php_docker  --> users
