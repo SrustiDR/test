@@ -43,3 +43,21 @@ git branch -d ftr1
 git branch -d fyr2
 git branch -D ftr2
 git graph
+STASH
+git text1.txt
+git checkout master
+git nano text1 // do somechanges
+git add
+git checkout stage //gives overwritten
+git stach
+git checkout stage
+git checkout master
+git stash list
+git nano text1// do again some changes
+git add or git commit -am "   "
+git stash
+git stash list
+git stash list-p  or git stash list apply
+git add.
+git commit -m ""
+cat text1.txt // to see changes
