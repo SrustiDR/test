@@ -28,9 +28,11 @@ services:
        WORDPRESS_DB_USER: wordpress
        WORDPRESS_DB_PASSWORD: wordpress
 volumes:
+    wordpress_files:
     db_data:
   ----------------------
   
   sudo docker-compose up --build -d
 
-    
+    ////////////
+https://www.linode.com/docs/guides/wordpress-with-docker-compose/
